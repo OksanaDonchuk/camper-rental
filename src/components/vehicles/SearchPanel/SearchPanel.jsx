@@ -106,6 +106,16 @@ const SearchPanel = () => {
     dispatch(fetchCatalog({ page: 1 }));
   };
 
+  const handleReset = () => {
+    setStateLocation("");
+    setStateType("");
+    setStateEquipments([]);
+    setSearchParams({});
+    dispatch(setFilters({ location: "", type: "", equipments: [] }));
+    dispatch(updatePage(1));
+    dispatch(fetchCatalog({ page: 1 }));
+  };
+
   return (
     <div className={css.wrapper}>
       <div className={css.section}>
@@ -153,8 +163,11 @@ const SearchPanel = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className={css.buttonGroup}>
         <Button onClick={handleSearch}>Search</Button>
+        <Button onClick={handleReset} variant="outline">
+          Reset filters
+        </Button>
       </div>
     </div>
   );

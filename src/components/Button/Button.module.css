@@ -33,3 +33,14 @@
 .button.secondary:focus-visible {
   border-color: var(--color-button-hover);
 }
+
+.outline {
+  background-color: white;
+  color: #101828;
+  border: 1px solid #d0d5dd;
+}
+
+.outline:hover {
+  background-color: #f2f2f2;
+  border-color: #b0b8c1;
+}
