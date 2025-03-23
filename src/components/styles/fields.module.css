@@ -1,0 +1,69 @@
+.fieldRow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fieldRow label {
+  color: var(--color-grey);
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-inputs);
+  height: 56px;
+  padding: 16px 20px;
+  color: var(--color-grey);
+  border-radius: 12px;
+}
+
+.field label {
+  flex-shrink: 0;
+}
+
+.required label::after {
+  content: "*";
+}
+
+.fieldWithTextarea {
+  height: auto;
+  align-items: flex-start;
+}
+
+.field textarea {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.fieldFocused {
+  color: var(--color-dark);
+}
+
+.field input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.field > svg {
+  flex-shrink: 0;
+}
+
+.field input {
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--color-grey);
+}
+
+.error {
+  display: block;
+  color: var(--color-button);
+  width: 100%;
+}

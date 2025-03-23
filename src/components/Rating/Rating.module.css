@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.location,
+.rating {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.star {
+  color: var(--color-yellow);
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}

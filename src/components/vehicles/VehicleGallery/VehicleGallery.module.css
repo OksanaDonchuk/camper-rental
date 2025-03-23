@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.loadmore {
+  text-align: center;
+  margin-top: 8px;
+}
