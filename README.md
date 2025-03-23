@@ -4,7 +4,7 @@
 
 ## 🔗 Демо
 
-➡ [Перейти до живої сторінки](https://your-vercel-link.vercel.app)
+➡ [https://camper-rental-tau.vercel.app](https://camper-rental-tau.vercel.app)
 
 ## 🧩 Стек технологій
 
